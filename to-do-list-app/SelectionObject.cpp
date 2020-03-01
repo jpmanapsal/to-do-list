@@ -18,5 +18,5 @@ std::string SelectionObject::get_name()
 
 void SelectionObject::run_function()
 {
-	function;
+	function();
 }
