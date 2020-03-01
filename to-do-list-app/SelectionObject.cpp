@@ -1,5 +1,4 @@
 #include "SelectionObject.h"
-#include <iostream>
 
 SelectionObject::SelectionObject(std::string n, void(*f)())
 	: name{n}, function{f}
@@ -19,5 +18,5 @@ std::string SelectionObject::get_name()
 
 void SelectionObject::run_function()
 {
-	function();
+	function;
 }

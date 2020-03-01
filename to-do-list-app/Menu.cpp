@@ -20,6 +20,6 @@ void Menu::display_menu()
 	// Input
 	int in{0};
 	std::cin >> in;
-	if (in >= 0 && in < selection.size())
+	if (in < selection.size() && in > 0)
 		selection.at(in).run_function();
 }
