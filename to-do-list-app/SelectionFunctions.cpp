@@ -4,3 +4,8 @@ void quit()
 {
 	return;
 }
+
+void view_tasks()
+{
+	return;
+}
