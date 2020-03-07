@@ -9,6 +9,11 @@ Menu::~Menu()
 {
 }
 
+void Menu::get_input()
+{
+
+}
+
 void Menu::display_menu()
 {
 	// Display
@@ -22,4 +27,6 @@ void Menu::display_menu()
 	std::cin >> in;
 	if (in < selection.size() && in >= 0)
 		selection.at(in).run_function();
+	else
+		std::cout << "Invalid Input\n";
 }

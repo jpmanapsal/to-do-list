@@ -1,7 +1,7 @@
 #include "SelectionObject.h"
 
 SelectionObject::SelectionObject(std::string n, void(*f)())
-	: name{n}, function{f}
+	: name{n}, function{f} 
 {
 
 }
