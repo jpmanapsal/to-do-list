@@ -21,10 +21,10 @@ namespace TaskManager
 	{
 		for (size_t i{0}; i < tasks.size(); i++)
 		{
-			SelectionObject task{ tasks.at(i) };
+			SelectionObject task{tasks.at(i)};
 			if (task.get_name() == selection_remove_task.get_name() || task.get_name() == selection_main_menu.get_name() || task.get_name() == selection_add_task.get_name())
 				continue;
-			else
+			else if (tasks.at(i).get_name() == task_name)
 				tasks.erase(tasks.begin() + i);
 		}
 
